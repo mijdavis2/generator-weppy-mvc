@@ -1,7 +1,6 @@
 var glob = require('glob');
 var path = require('path');
 var generators = require('yeoman-generator');
-var chalk  = require('chalk');
 var yosay  = require('yosay');
 var _ = require('lodash');
 
@@ -22,7 +21,7 @@ module.exports = generators.Base.extend({
         this.destinationPath(),
         {
           app_name: this.namespace,
-          app_title: _.capitalize(this.namespace)
+          app_title: _.startCase(this.namespace)
         }
     );
   }

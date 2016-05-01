@@ -5,8 +5,8 @@ var helpers = require('yeoman-test');
 
 describe('generator-weppy-mvc:app', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
+    helpers.run(path.join(__dirname, '../app'))
+      .withArguments(['name-x'])
       .on('end', done);
   });
 
