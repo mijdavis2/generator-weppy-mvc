@@ -24,5 +24,21 @@ module.exports = generators.Base.extend({
           app_title: _.startCase(this.namespace)
         }
     );
+  this.fs.copyTpl(
+      this.templatePath('starter_weppy/*'),
+      this.destinationPath(this.namespace),
+      {
+          app_name: this.namespace,
+          app_title: _.startCase(this.namespace)
+      }
+  );
+  this.fs.copyTpl(
+      this.templatePath('tests/*'),
+      this.destinationPath('tests'),
+      {
+          app_name: this.namespace,
+          app_title: _.startCase(this.namespace)
+      }
+  );
   }
 });

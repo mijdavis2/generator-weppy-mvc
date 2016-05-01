@@ -25,4 +25,11 @@ describe('generator-weppy-mvc:app', function () {
     assert.fileContent(test_app_name + '/__init__.py', test_app_name);
     assert.noFileContent(test_app_name + '/__init__.py', 'app_name');
   });
+  it('creates test files', function () {
+    assert.file([
+      'tests/fixtures.py'
+    ]);
+    assert.fileContent('tests/fixtures.py', test_app_name);
+    assert.noFileContent('tests/fixtures.py', 'app_name');
+  });
 });
