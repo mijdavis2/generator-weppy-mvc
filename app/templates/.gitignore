@@ -1,0 +1,10 @@
+*logs/
+.idea/
+*.iml
+*.pyc
+*.html
+*generated/
+*cache
+.coverage
+*databases/
+*private/

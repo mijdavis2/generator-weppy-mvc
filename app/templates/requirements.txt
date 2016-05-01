@@ -1,0 +1,7 @@
+argparse==1.4.0
+coverage==4.0.3
+pytest-cov==2.2.1
+pytest==2.9.1
+weppy==0.6.4
+weppy-Haml==0.3
+wheel==0.29.0

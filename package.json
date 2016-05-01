@@ -1,0 +1,17 @@
+{
+  "name": "generator-weppy-mvc",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "lodash": "^4.11.1",
+    "nodegit": "^0.12.2",
+    "yeoman-generator": "^0.20.2",
+    "yosay": "^1.1.1"
+  }
+}
