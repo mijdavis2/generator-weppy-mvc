@@ -10,6 +10,7 @@
   ],
   "dependencies": {
     "lodash": "^4.11.1",
+    "mocha": "^2.4.5",
     "nodegit": "^0.12.2",
     "yeoman-generator": "^0.20.2",
     "yosay": "^1.1.1"
