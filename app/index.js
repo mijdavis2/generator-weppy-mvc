@@ -22,7 +22,7 @@ module.exports = generators.Base.extend({
         this.destinationPath(),
         {
           app_name: this.namespace,
-          app_title: _.camelCase(this.namespace)
+          app_title: _.capitalize(this.namespace)
         }
     );
   }
