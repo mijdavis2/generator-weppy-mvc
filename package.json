@@ -9,6 +9,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
+    "glob": "^7.0.3",
     "lodash": "^4.11.1",
     "mocha": "^2.4.5",
     "nodegit": "^0.12.2",
