@@ -13,7 +13,9 @@ describe('generator-weppy-mvc:app', function () {
 
   it('creates root files', function () {
     assert.file([
-      'run.py'
+      'run.py',
+      '.coveragerc',
+      '.gitignore'
     ]);
     assert.fileContent('run.py', testAppName);
     assert.noFileContent('run.py', 'app_name');
