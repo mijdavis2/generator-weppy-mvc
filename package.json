@@ -6,7 +6,11 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "weppy",
+    "mvc",
+    "webapp",
+    "python"
   ],
   "dependencies": {
     "codacy-coverage": "^1.1.3",
