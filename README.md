@@ -1,5 +1,9 @@
+[![NPM version][npm-image]][npm-url] 
+[![Build Status][travis-image]][travis-url] 
+[![Coverage percentage][coveralls-image]][coveralls-url] 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ce0ad20ca59947af86b0f17a5779c804)](https://www.codacy.com/app/mijdavis2/generator-weppy-mvc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/generator-weppy-mvc&amp;utm_campaign=Badge_Grade)
+
 # generator-weppy-mvc 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ce0ad20ca59947af86b0f17a5779c804)](https://www.codacy.com/app/mijdavis2/generator-weppy-mvc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/generator-weppy-mvc&amp;utm_campaign=Badge_Grade)
 
 This generator is based on the latest version of the [starter-weppy](https://github.com/mijdavis2/starter_weppy) project.
 
