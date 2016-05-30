@@ -1,6 +1,6 @@
 {
   "name": "generator-weppy-mvc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Python web application MVC scaffolding built on the Weppy framework.",
   "keywords": [
     "yeoman-generator",
