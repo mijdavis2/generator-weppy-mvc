@@ -38,8 +38,15 @@ yo weppy-mvc my_weppy_app
 
 **Note:** Use a python import safe app name (i.e. no dashes).
 
+## Testing
+
+Simply use
+
+``` 
+mocha
+```
+
 ## ToDo
-[ ] Prompt for yeoman for requesting app name
 [ ] Prompt for yeoman for optional bootstrap
 
 ## License
