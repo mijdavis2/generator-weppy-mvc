@@ -34,8 +34,6 @@ npm install -g generator-weppy-mvc
 
 ## Usage
 
-[![NPM](http://nodei.co/npm/generator-weppy-mvc.png)](http://npmjs.org/package/generator-weppy-mvc)
-
 Then generate your new project:
 
 ```bash
