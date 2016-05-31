@@ -3,11 +3,12 @@ var path = require('path');
 var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 var testAppName = 'name_x';
+var testUserName = 'username_x';
 
 describe('generator-weppy-mvc:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
-      .withArguments([testAppName])
+      .withArguments([testAppName, testUserName])
       .on('end', done);
   });
 
@@ -33,5 +34,14 @@ describe('generator-weppy-mvc:app', function () {
     ]);
     assert.fileContent('tests/fixtures.py', testAppName);
     assert.noFileContent('tests/fixtures.py', 'app_name');
+  });
+  it('creates readme files', function () {
+    assert.file([
+      'README.md'
+    ]);
+    assert.fileContent('README.md', testAppName);
+    assert.noFileContent('README.md', 'app_name');
+    assert.fileContent('README.md', testUserName);
+    assert.noFileContent('README.md', 'user_name');
   });
 });

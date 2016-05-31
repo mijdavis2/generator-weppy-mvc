@@ -36,12 +36,15 @@ npm install -g generator-weppy-mvc
 
 Then generate your new project:
 
+- app_name: Desired application name. 
 **Note:** Use a python import safe app name (i.e. _no dashes_).
+- github_username: Your github username (assists in creating url links)
+
 
 ```bash
-mkdir my_weppy_app
-cd my_weppy_app
-yo weppy-mvc my_weppy_app
+mkdir <app_name>
+cd <app_name>
+yo weppy-mvc <github_username> <app_name>
 ```
 
 
