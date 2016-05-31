@@ -10,10 +10,10 @@
 This generator is based on the latest version of the [starter-weppy](https://github.com/mijdavis2/starter_weppy) project.
 
 ## Features
-- Python3 MVC framework
-- Easy addon modules - api included
+- Pythonic MVC framework
+- API module and examples included
 - Pythonic Haml
-- pyDAL
+- 100% Test Coverage
 - Bootstrap
 
 > ### Starter Weppy
@@ -36,11 +36,14 @@ npm install -g generator-weppy-mvc
 
 Then generate your new project:
 
+**Note:** Use a python import safe app name (i.e. _no dashes_).
+
 ```bash
+mkdir my_weppy_app
+cd my_weppy_app
 yo weppy-mvc my_weppy_app
 ```
 
-**Note:** Use a python import safe app name (i.e. no dashes).
 
 ## Testing
 
