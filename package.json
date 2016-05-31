@@ -11,9 +11,10 @@
     "yo"
   ],
   "main": "app/index.js",
-  "homepage": "https://github.com/vesln/nixt",
+  "homepage": "https://starter-weppy.com",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "app": "app"
   },
   "scripts": {
     "test": "mocha"
