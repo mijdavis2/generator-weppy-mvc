@@ -9,6 +9,8 @@
 
 This generator is based on the latest version of the [starter-weppy](https://github.com/mijdavis2/starter_weppy) project.
 
+**Live demo: https://starter-weppy.com**
+
 ## Features
 - Pythonic MVC framework
 - API module and examples included
@@ -20,8 +22,6 @@ This generator is based on the latest version of the [starter-weppy](https://git
 > [![Build Status](https://travis-ci.org/mijdavis2/starter_weppy.svg?branch=master)](https://travis-ci.org/mijdavis2/starter_weppy) [![Coverage Status](https://coveralls.io/repos/github/mijdavis2/starter_weppy/badge.svg?branch=master)](https://coveralls.io/github/mijdavis2/starter_weppy?branch=master)
 > [Starter-weppy](https://github.com/mijdavis2/starter_weppy) is a python web application starter kit developed on the [weppy framework](https://github.com/gi0baro/weppy). 
 > Current version is based on Weppy 0.6 with an MVC scaffolding. An api module, dev mode, and 100% test coverage are included out of the box.
->
-> Live demo soon to come.
 
 ## Installation
 
