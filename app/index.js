@@ -12,6 +12,12 @@ module.exports = generators.Base.extend({
       required: true,
       description: 'Generator namespace'
     });
+
+    this.argument('username', {
+      type: String,
+      required: true,
+      description: 'Generator username'
+    });
   },
 
   writing: function () {
@@ -20,15 +26,17 @@ module.exports = generators.Base.extend({
         this.destinationPath(),
         {
           app_name: this.namespace,
-          app_title: _.startCase(this.namespace)
+          app_title: _.startCase(this.namespace),
+          user_name: this.username
         }
     );
   this.fs.copyTpl(
-      this.templatePath('starter_weppy/*'),
+      this.templatePath('starter_weppy/**/*'),
       this.destinationPath(this.namespace),
       {
           app_name: this.namespace,
-          app_title: _.startCase(this.namespace)
+          app_title: _.startCase(this.namespace),
+        user_name: this.username
       }
   );
   this.fs.copyTpl(
@@ -36,7 +44,17 @@ module.exports = generators.Base.extend({
       this.destinationPath('tests'),
       {
           app_name: this.namespace,
-          app_title: _.startCase(this.namespace)
+          app_title: _.startCase(this.namespace),
+        user_name: this.username
+      }
+  );
+  this.fs.copyTpl(
+      this.templatePath('.*'),
+      this.destinationPath(),
+      {
+          app_name: this.namespace,
+          app_title: _.startCase(this.namespace),
+        user_name: this.username
       }
   );
   }
