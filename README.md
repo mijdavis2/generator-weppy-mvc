@@ -16,6 +16,7 @@ This generator is based on the latest version of the [starter-weppy](https://git
 - API module and examples included
 - Pythonic Haml
 - 100% Test Coverage
+- Virtual Environment setup
 - Bootstrap
 
 > ### Starter Weppy
@@ -34,12 +35,15 @@ npm install -g generator-weppy-mvc
 
 ## Usage
 
-Then generate your new project:
+###  Generate your new project:
 
-- app_name: Desired application name. 
-**Note:** Use a python import safe app name (i.e. _no dashes_).
-- github_username: Your github username.
-**Note:** If you aren't using github, don't worry. This only helps with creating links/badges. Planning to support bitbucket and gitlab in the future.
+- **app_name:** Desired application name. 
+  > **Note:** Use a python import safe app name (i.e. _no dashes_).
+
+- **app_name:** Desired application name. 
+  > **Note:** Use a python import safe app name (i.e. _no dashes_).
+- **github_username:** Your github username.
+  > **Note:** If you aren't using github, don't worry. This only helps with creating links/badges. Planning to support bitbucket and gitlab in the future.
 
 
 ```bash
@@ -48,6 +52,20 @@ cd <app_name>
 yo weppy-mvc <app_name> <github_username>
 ```
 
+###  Initiate git and setup environment:
+
+```bash
+git init
+source ./setup.sh
+```
+
+**setup.sh** sets up a virtualenv for your project and installs all
+required packages for you.
+
+Add any new packages to ```requirements.txt```.
+
+When working on your project, use ```. ./setup.sh``` to activate
+your projects virtual environment.
 
 ## Testing
 
