@@ -1,6 +1,7 @@
-# <%= app_title %> 
 [![Build Status](https://travis-ci.org/<%= user_name %>/<%= app_name %>.svg?branch=master)](https://travis-ci.org/<%= user_name %>/<%= app_name %>)
 [![Coverage Status](https://coveralls.io/repos/github/<%= user_name %>/<%= app_name %>/badge.svg?branch=master)](https://coveralls.io/github/<%= user_name %>/<%= app_name %>?branch=master)
+
+# <%= app_title %> 
 
 ## Run
 
@@ -57,3 +58,6 @@ py.test -v -s --cov-report term-missing --cov=<%= app_name %> -r w tests
 ## License
 
 MIT
+
+---
+<%= app_title %> created using [generator-weppy-mvc](https://github.com/mijdavis2/generator-weppy-mvc).
