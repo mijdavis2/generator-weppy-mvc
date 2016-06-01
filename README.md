@@ -39,9 +39,6 @@ npm install -g generator-weppy-mvc
 
 - **app_name:** Desired application name. 
   > **Note:** Use a python import safe app name (i.e. _no dashes_).
-
-- **app_name:** Desired application name. 
-  > **Note:** Use a python import safe app name (i.e. _no dashes_).
 - **github_username:** Your github username.
   > **Note:** If you aren't using github, don't worry. This only helps with creating links/badges. Planning to support bitbucket and gitlab in the future.
 
