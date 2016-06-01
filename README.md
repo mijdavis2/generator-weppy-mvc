@@ -49,20 +49,10 @@ cd <app_name>
 yo weppy-mvc <app_name> <github_username>
 ```
 
-###  Initiate git and setup environment:
+###  Developing and running your new Weppy MVC app:
 
-```bash
-git init
-source ./setup.sh
-```
-
-**setup.sh** sets up a virtualenv for your project and installs all
-required packages for you.
-
-Add any new packages to ```requirements.txt```.
-
-When working on your project, use ```. ./setup.sh``` to activate
-your projects virtual environment.
+Reference the generated README for detailed instructions.
+Example can be found [here](https://github.com/mijdavis2/starter_weppy#run)
 
 ## Testing
 
@@ -73,7 +63,9 @@ mocha
 ```
 
 ## ToDo
-[ ] Prompt for yeoman for optional bootstrap
+- [ ] Prompt for yeoman for optional bootstrap
+- [ ] Add Progressive app shell structure
+- [ ] Add Material Design and Icon support
 
 ## License
 
