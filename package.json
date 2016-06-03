@@ -1,7 +1,7 @@
 {
   "name": "generator-weppy-mvc",
   "version": "1.2.0",
-  "description": "Python web application MVC scaffolding built on Weppy: a full-stack python web framework designed with simplicity in mind.",
+  "description": "Build a full stack python web application in minutes.",
   "keywords": [
     "yeoman-generator",
     "weppy",
