@@ -14,12 +14,12 @@ This generator is an MVC scaffolding for a [weppy](https://github.com/gi0baro/we
 Weppy is a full-stack python web framework designed with simplicity in mind. 
 
 ### Features specific to this generator
-- Easy Virtual Environment setup
-- Pythonic MVC framework
+- Easy virtual environment setup
+- Pythonic MVC scaffolding
 - API module and examples included
-- Haml templating
 - 100% Test Coverage
-- Dev mode and development tools.
+- Dev mode & development tools
+- Haml templating
 - Bootstrap
 
 ## Installation
@@ -57,16 +57,14 @@ An api module, dev mode, and 100% test coverage are included out of the box.
 
 ## Testing
 
-Simply use
-
 ``` 
 mocha
 ```
 
 ## ToDo
-- [ ] Build and deploy tools
-- [ ] Add Progressive app shell structure
-- [ ] Add Material Design and Icon support
+- [ ] Deployment tools
+- [ ] Progressive app shell structure
+- [ ] Material Design and icons
 
 ## License
 
