@@ -9,7 +9,7 @@
 VERSION=0.1.0
 USAGE='Usage: source setup.sh -hv -p "/path/to/python/" -r "repoName" -q "/path/to/requirements.txt"'
 PY_MAJ_REQ=3
-PY_MIN_REQ=5
+PY_MIN_REQ=4
 PY_PAT_REQ=1
 
 # --- Option processing --------------------------------------------

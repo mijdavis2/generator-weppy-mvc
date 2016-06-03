@@ -1,58 +1,59 @@
 [![NPM version][npm-image]][npm-url] 
 [![Build Status][travis-image]][travis-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url] 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ce0ad20ca59947af86b0f17a5779c804)](https://www.codacy.com/app/mijdavis2/generator-weppy-mvc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/generator-weppy-mvc&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge][codacy-image]][codacy-url]
 
 # generator-weppy-mvc
  
-[![NPM](https://nodei.co/npm/generator-weppy-mvc.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-weppy-mvc/)
+[![NPM][npm-info-image]][npm-info-url]
 
-This generator is based on the latest version of the [starter-weppy](https://github.com/mijdavis2/starter_weppy) project.
+Build a full-stack python web application in minutes.
 
-**Live demo: https://starter-weppy.com**
+This generator is an MVC scaffolding for a [weppy](https://github.com/gi0baro/weppy) application.
 
-## Features
+Weppy is a full-stack python web framework designed with simplicity in mind. 
+
+### Features specific to this generator
+- Easy Virtual Environment setup
 - Pythonic MVC framework
 - API module and examples included
-- Pythonic Haml
+- Haml templating
 - 100% Test Coverage
-- Virtual Environment setup
+- Dev mode and development tools.
 - Bootstrap
-
-> ### Starter Weppy
-> [![Build Status](https://travis-ci.org/mijdavis2/starter_weppy.svg?branch=master)](https://travis-ci.org/mijdavis2/starter_weppy) [![Coverage Status](https://coveralls.io/repos/github/mijdavis2/starter_weppy/badge.svg?branch=master)](https://coveralls.io/github/mijdavis2/starter_weppy?branch=master)
-> [Starter-weppy](https://github.com/mijdavis2/starter_weppy) is a python web application starter kit developed on the [weppy framework](https://github.com/gi0baro/weppy). 
-> Current version is based on Weppy 0.6 with an MVC scaffolding. An api module, dev mode, and 100% test coverage are included out of the box.
 
 ## Installation
 
-Requires [Yeoman](http://yeoman.io) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+Requires [npm](https://www.npmjs.com/).
 
-```bash
+```
 npm install -g yo
 npm install -g generator-weppy-mvc
 ```
 
 ## Usage
 
-###  Generate your new project:
-
-- **app_name:** Desired application name. 
-  > **Note:** Use a python import safe app name (i.e. _no dashes_).
-- **github_username:** Your github username.
-  > **Note:** If you aren't using github, don't worry. This only helps with creating links/badges. Planning to support bitbucket and gitlab in the future.
-
-
-```bash
+```
 mkdir <app_name>
 cd <app_name>
 yo weppy-mvc <app_name> <github_username>
 ```
 
-###  Developing and running your new Weppy MVC app:
+- **app_name:** Use a python import safe app name (i.e. _no dashes_).
+- **github_username:** Used to create links/badges for your readme.
 
-Reference the generated README for detailed instructions.
-Example can be found [here](https://github.com/mijdavis2/starter_weppy#run)
+## About
+
+**Live demo: https://starter-weppy.com**
+
+> ### Starter Weppy
+> [![Build Status][starter-weppy-travis-img]][starter-weppy-travis-url] [![Coverage Status][st-weppy-coveralls-image]][st-weppy-coveralls-url]
+> 
+> [Starter-weppy](https://github.com/mijdavis2/starter_weppy) is a 
+python web application starter kit developed on the [weppy framework](https://github.com/gi0baro/weppy). 
+> Current version is based on Weppy 0.6 with an MVC scaffolding. 
+An api module, dev mode, and 100% test coverage are included out of the box.
+
 
 ## Testing
 
@@ -63,7 +64,7 @@ mocha
 ```
 
 ## ToDo
-- [ ] Prompt for yeoman for optional bootstrap
+- [ ] Build and deploy tools
 - [ ] Add Progressive app shell structure
 - [ ] Add Material Design and Icon support
 
@@ -78,3 +79,11 @@ MIT © [mijdavis2](http://mdavisinsc.com)
 [travis-url]: https://travis-ci.org/mijdavis2/generator-weppy-mvc
 [coveralls-image]: https://coveralls.io/repos/mijdavis2/generator-weppy-mvc/badge.svg
 [coveralls-url]: https://coveralls.io/r/mijdavis2/generator-weppy-mvc
+[codacy-image]: https://api.codacy.com/project/badge/Grade/ce0ad20ca59947af86b0f17a5779c804
+[codacy-url]: https://www.codacy.com/app/mijdavis2/generator-weppy-mvc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/generator-weppy-mvc&amp;utm_campaign=Badge_Grade
+[npm-info-image]: https://nodei.co/npm/generator-weppy-mvc.png?downloads=true&downloadRank=true&stars=true
+[npm-info-url]: https://nodei.co/npm/generator-weppy-mvc/
+[starter-weppy-travis-img]: https://travis-ci.org/mijdavis2/starter_weppy.svg?branch=master
+[starter-weppy-travis-url]: https://travis-ci.org/mijdavis2/starter_weppy
+[st-weppy-coveralls-image]: https://coveralls.io/repos/mijdavis2/starter_weppy/badge.svg
+[st-weppy-coveralls-url]: https://coveralls.io/r/mijdavis2/starter_weppy
