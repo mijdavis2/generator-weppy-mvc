@@ -49,13 +49,31 @@ module.exports = generators.Base.extend({
         }
     );
     this.fs.copyTpl(
-        this.templatePath('.*'),
-        this.destinationPath(),
-        {
-            app_name: this.namespace,
-            app_title: _.startCase(this.namespace),
-          user_name: this.username
-        }
-  );
+      this.templatePath('_travis.yml'),
+      this.destinationPath('.travis.yml'),
+      {
+        appName: this.namespace,
+        appTitle: _.startCase(this.namespace),
+        userName: this.username
+      }
+    );
+    this.fs.copyTpl(
+      this.templatePath('_coveragerc'),
+      this.destinationPath('.coveragerc'),
+      {
+        appName: this.namespace,
+        appTitle: _.startCase(this.namespace),
+        userName: this.username
+      }
+    );
+    this.fs.copyTpl(
+      this.templatePath('_gitignore'),
+      this.destinationPath('.gitignore'),
+      {
+        appName: this.namespace,
+        appTitle: _.startCase(this.namespace),
+        userName: this.username
+      }
+    );
   }
 });

@@ -16,7 +16,8 @@ describe('generator-weppy-mvc:app', function () {
     assert.file([
       'run.py',
       '.coveragerc',
-      '.gitignore'
+      '.gitignore',
+      '.travis.yml'
     ]);
     assert.fileContent('run.py', testAppName);
     assert.noFileContent('run.py', 'app_name');
