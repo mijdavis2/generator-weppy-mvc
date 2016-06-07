@@ -34,8 +34,8 @@ module.exports = generators.Base.extend({
         this.templatePath('starter_weppy/**/*'),
         this.destinationPath(this.namespace),
         {
-            app_name: this.namespace,
-            app_title: _.startCase(this.namespace),
+          app_name: this.namespace,
+          app_title: _.startCase(this.namespace),
           user_name: this.username
         }
     );
