@@ -49,7 +49,7 @@ module.exports = generators.Base.extend({
         }
     );
     this.fs.copyTpl(
-      this.templatePath('_travis.yml'),
+      this.templatePath('dotfiles/_travis.yml'),
       this.destinationPath('.travis.yml'),
         {
           app_name: this.namespace,
@@ -58,7 +58,7 @@ module.exports = generators.Base.extend({
         }
     );
     this.fs.copyTpl(
-      this.templatePath('_coveragerc'),
+      this.templatePath('dotfiles/_coveragerc'),
       this.destinationPath('.coveragerc'),
         {
           app_name: this.namespace,
@@ -67,7 +67,7 @@ module.exports = generators.Base.extend({
         }
     );
     this.fs.copyTpl(
-      this.templatePath('_gitignore'),
+      this.templatePath('dotfiles/_gitignore'),
       this.destinationPath('.gitignore'),
         {
           app_name: this.namespace,
