@@ -14,15 +14,6 @@ This generator is an MVC scaffolding for a [weppy](https://github.com/gi0baro/we
 
 Weppy is a full-stack python web framework designed with simplicity in mind. 
 
-### Features specific to this generator
-- Easy virtual environment setup
-- Pythonic MVC scaffolding
-- API module and examples included
-- 100% Test Coverage
-- Dev mode & development tools
-- Haml templating
-- Bootstrap
-
 ## Installation
 
 Requires [npm](https://www.npmjs.com/).
@@ -37,6 +28,23 @@ npm install -g generator-weppy-mvc
 ```
 yo weppy-mvc
 ```
+
+### Current Features
+
+- Easy virtual environment setup
+- Pythonic MVC scaffolding
+- API module and examples included
+- 100% Test Coverage
+- Dev mode & development tools
+- Haml templating
+- Bootstrap
+
+### ToDo
+
+- [ ] Optional Bootstrap, Material Design and icons, or no builtin css framework
+- [ ] Deployment tools
+- [ ] Optional Progressive app shell structure
+- [ ] Optional service workers
 
 ## About
 
@@ -56,11 +64,6 @@ An api module, dev mode, and 100% test coverage are included out of the box.
 ``` 
 mocha
 ```
-
-## ToDo
-- [ ] Deployment tools
-- [ ] Progressive app shell structure
-- [ ] Material Design and icons
 
 ## License
 
