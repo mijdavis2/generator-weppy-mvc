@@ -8,7 +8,14 @@ var testUserName = 'username_x';
 describe('generator-weppy-mvc:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
-      .withArguments([testAppName, testUserName])
+      .withPrompts({
+        useDirectory: this.appname,
+        packageName: testAppName,
+        packageDescription: "My test app",
+        username: testUserName,
+        pythonVersion: "2.7.9",
+        license: "MIT"
+      })
       .on('end', done);
   });
 
