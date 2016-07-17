@@ -6,11 +6,13 @@
 #          and set environment variables with one command.
 # ------------------------------------------------------------------
 
-VERSION=0.1.0
-USAGE='Usage: source setup.sh -hv -p "/path/to/python/" -r "repoName" -q "/path/to/requirements.txt"'
-PY_MAJ_REQ=3
-PY_MIN_REQ=4
-PY_PAT_REQ=1
+VERSION=0.2.1
+# If executing setup.sh from root dir of this repo, you can simply do ```source setup.sh``` without args.
+USAGE='Usage: source setup.sh -hv -p "/path/to/python/" -r "repoName" -q "/path/to/repo_root_dir"'
+
+REQ_MAJOR=<%= reqMajor %>
+REQ_MINOR=<%= reqMinor %>
+REQ_PATCH=<%= reqPatch %>
 
 # --- Option processing --------------------------------------------
 while getopts ":v:h:p:r:q:" o; do
@@ -62,25 +64,26 @@ fi
 if [ ! "$PYTHON" ]
 then
     echo "No python version designated."
-    echo "Using machine's default python$PY_MAJ_REQ.$PY_MIN_REQ version"
-    PYTHON="$( which python"$PY_MAJ_REQ"."$PY_MIN_REQ" )"
+    echo "Using machine's default python version"
+    PYTHON="$( which python )"
 fi
 
 PMAJOR="$( "$PYTHON" -c 'import platform; major, minor, patch = platform.python_version_tuple(); print(major);' )"
 PMINOR="$( "$PYTHON" -c 'import platform; major, minor, patch = platform.python_version_tuple(); print(minor);' )"
 PPATCH="$( "$PYTHON" -c 'import platform; major, minor, patch = platform.python_version_tuple(); print(patch);' )"
 
-if [[ "$PMAJOR" -ge $PY_MAJ_REQ ]] && [[ "$PMINOR" -ge $PYMIN_REQ ]] && [[ "$PPATCH" -ge $PY_PAT_REQ ]]
+if [[ "$PMAJOR" -eq $REQ_MAJOR ]] && [[ "$PMINOR" -ge $REQ_MINOR ]] && [[ "${PPATCH//[!0-9]/}" -ge $REQ_PATCH ]]
 then
     echo "Python version is good enough: $PMAJOR.$PMINOR.$PPATCH."
 else
-    echo "Python version must be $PY_MAJ_REQ.$PY_MIN_REQ.$PY_PAT_REQ."
+    echo "Python version must be 2.7.9 or greater."
     echo "Yours is $PMAJOR.$PMINOR.$PPATCH :("
     return 1
 fi
 
 export VIRTUALENVWRAPPER_PYTHON="$PYTHON"
 
+mkdir -p logs
 
 export WORKON_HOME=~/.virtualenvs
 
@@ -135,21 +138,11 @@ else
   source $PYTHONHOME/Scripts/activate
 fi
 
-while read dependency; do
-    dependency_stripped="$(echo "${dependency}" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
-    # Skip comments
-    if [[ $dependency_stripped == \#* ]]; then
-        continue
-    # Skip blank lines
-    elif [ -z "$dependency_stripped" ]; then
-        continue
-    else
-        if pip install -q "$dependency_stripped"; then
-            echo "$dependency_stripped is installed"
-        else
-            echo "Could not install $dependency_stripped, skipping"
-        fi
-    fi
-done < "$REQUIREMENTS_DIR"/requirements.txt
+export PYTHONPATH="$THIS_DIR":$HOME/.virtualenvs/"$REQUIRED_VENV"/lib/python2.7/site-packages:"$REQUIREMENTS_DIR"
 
-export PYTHONPATH="$THIS_DIR":$HOME/.virtualenvs/"$REQUIRED_VENV"/lib/python"$PMAJOR"."$PMINOR"/site-packages:"$REQUIREMENTS_DIR"
+if [ -d ~/.virtualenvs/"$REQUIRED_VENV"/bin/ ]
+then
+  ~/.virtualenvs/"$REQUIRED_VENV"/bin/pip install -r "$REQUIREMENTS_DIR"/requirements.txt
+else
+  ~/.virtualenvs/"$REQUIRED_VENV"/Scripts/pip install -r "$REQUIREMENTS_DIR"/requirements.txt
+fi

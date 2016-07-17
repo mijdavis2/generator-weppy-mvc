@@ -2,7 +2,7 @@
 [![Build Status][travis-image]][travis-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url] 
 [![Codacy Badge][codacy-image]][codacy-url]
-[![Weppy Version](https://img.shields.io/badge/weppy-0.7.3-blue.svg)](https://github.com/gi0baro/weppy)
+[![Weppy Version](https://img.shields.io/badge/weppy-0.7.5-blue.svg)](https://github.com/gi0baro/weppy)
 
 # generator-weppy-mvc
  
@@ -35,13 +35,8 @@ npm install -g generator-weppy-mvc
 ## Usage
 
 ```
-mkdir <app_name>
-cd <app_name>
-yo weppy-mvc <app_name> <github_username>
+yo weppy-mvc
 ```
-
-- **app_name:** Use a python import safe app name (i.e. _no dashes_).
-- **github_username:** Used to create links/badges for your readme.
 
 ## About
 

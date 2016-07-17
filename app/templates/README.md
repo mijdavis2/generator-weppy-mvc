@@ -1,14 +1,18 @@
 [![Build Status][travis-img]][travis-url]
 [![Coverage Status][coverall-img]][coverall-url]
+[![Weppy Version](https://img.shields.io/badge/weppy-0.7.5-blue.svg)](https://github.com/gi0baro/weppy)
+
 
 # <%= app_title %>
  
 A [Weppy](http://weppy.org) application.
 
+<%= packageDescription %>
+
 ## Run
 
 **Requirements**:
-- Python 3.4+ or 3.5+
+- Python <%= reqMajor %>.<%= reqMinor %>.<%= reqPatch %>+
 
 For automated pip and virtual env setup and creation:
 
@@ -57,10 +61,10 @@ py.test -v -s --cov-report term-missing --cov=<%= app_name %> -r w tests
 
 ## License
 
-MIT
+[<%= license %>](LICENSE) <%= year %> <%= username %>
 
 
-[travis-img]: https://travis-ci.org/<%= user_name %>/<%= app_name %>.svg?branch=master
-[travis-url]: https://travis-ci.org/<%= user_name %>/<%= app_name %>
-[coverall-img]: https://coveralls.io/repos/github/<%= user_name %>/<%= app_name %>/badge.svg?branch=master
-[coverall-url]: https://coveralls.io/github/<%= user_name %>/<%= app_name %>?branch=master
+[travis-img]: https://travis-ci.org/<%= username %>/<%= app_name %>.svg?branch=master
+[travis-url]: https://travis-ci.org/<%= username %>/<%= app_name %>
+[coverall-img]: https://coveralls.io/repos/github/<%= username %>/<%= app_name %>/badge.svg?branch=master
+[coverall-url]: https://coveralls.io/github/<%= username %>/<%= app_name %>?branch=master
