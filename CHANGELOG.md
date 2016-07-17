@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.2](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.2) (2016-07-17)
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.1...2.0.2)
+
+**Merged pull requests:**
+
+- :bug: Fix package requirements and tests [\#3](https://github.com/mijdavis2/generator-weppy-mvc/pull/3) ([mijdavis2](https://github.com/mijdavis2))
+
 ## [2.0.1](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.1) (2016-07-17)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/0.1.1...2.0.1)
 
