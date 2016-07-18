@@ -1,5 +1,8 @@
 # Change Log
 
+## [2.0.3](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.3) (2016-07-18)
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.2...2.0.3)
+
 ## [2.0.2](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.2) (2016-07-17)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.1...2.0.2)
 
