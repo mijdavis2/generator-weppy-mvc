@@ -2,7 +2,7 @@
 [![Build Status][travis-image]][travis-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url] 
 [![Codacy Badge][codacy-image]][codacy-url]
-[![Weppy Version](https://img.shields.io/badge/weppy-<%= weppyVersion %>-blue.svg)](https://github.com/gi0baro/weppy)
+[![Weppy Version](https://img.shields.io/badge/weppy-0.7.9-blue.svg)](https://github.com/gi0baro/weppy)
 
 # generator-weppy-mvc
  
