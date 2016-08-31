@@ -1,6 +1,6 @@
 [![Build Status][travis-img]][travis-url]
 [![Coverage Status][coverall-img]][coverall-url]
-[![Weppy Version](https://img.shields.io/badge/weppy-0.7.8-blue.svg)](https://github.com/gi0baro/weppy)
+[![Weppy Version](https://img.shields.io/badge/weppy-<%= weppyVersion %>-blue.svg)](https://github.com/gi0baro/weppy)
 
 
 # <%= app_title %>

@@ -110,7 +110,8 @@ module.exports = yeoman.Base.extend({
       packageDescription: this.answers.packageDescription,
       license: this.answers.license,
       year: this._defaultYear(),
-      includeLicense: this.answers.includeLicense
+      includeLicense: this.answers.includeLicense,
+      weppyVersion: '0.7.9'
     };
     if (this.answers.useDirectory != this.appname) {
       this.destinationRoot(this.answers.useDirectory);
