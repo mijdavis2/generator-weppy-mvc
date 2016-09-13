@@ -76,7 +76,7 @@ if [[ "$PMAJOR" -eq $REQ_MAJOR ]] && [[ "$PMINOR" -ge $REQ_MINOR ]] && [[ "${PPA
 then
     echo "Python version is good enough: $PMAJOR.$PMINOR.$PPATCH."
 else
-    echo "Python version must be 2.7.9 or greater."
+    echo "Python version must be $REQ_MAJOR.$REQ_MINOR.$REQ_PATCH or greater."
     echo "Yours is $PMAJOR.$PMINOR.$PPATCH :("
     return 1
 fi
