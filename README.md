@@ -55,7 +55,7 @@ yo weppy-mvc
 > 
 > [Starter-weppy](https://github.com/mijdavis2/starter_weppy) is a 
 python web application starter kit developed on the [weppy framework](https://github.com/gi0baro/weppy). 
-> Current version is based on Weppy 0.7 with an MVC scaffolding. 
+> Current version is based on Weppy 0.8.2 with an MVC scaffolding. 
 An api module, dev mode, and 100% test coverage are included out of the box.
 
 
