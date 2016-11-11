@@ -17,7 +17,7 @@ app.language_force_on_url = True
 app.language_write = True
 
 # init database and auth
-from <%= app_name %>.models.user import User
+from <%= appName %>.models.user import User
 
 # init auth before passing db models due to dependencies
 # on auth tables in the other models
@@ -27,7 +27,7 @@ auth = Auth(
 )
 
 # adding sessions and authorization handlers
-from <%= app_name %>.utils import get_cryptogen_string
+from <%= appName %>.utils import get_cryptogen_string
 app.route.common_handlers = [
     SessionCookieManager(get_cryptogen_string(16)),
     db.handler,
@@ -41,7 +41,7 @@ app.config.Haml.auto_reload = True
 app.use_extension(Haml)
 
 # Expose controllers
-from <%= app_name %>.controllers import *
+from <%= appName %>.controllers import *
 
 # Commands
-from <%= app_name %> import cli
+from <%= appName %> import cli

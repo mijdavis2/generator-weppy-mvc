@@ -91,18 +91,18 @@ module.exports = yeoman.Base.extend({
       this.log('python version', answers.pythonVersion);
       this.answers = answers;
       if (this.answers.license) {
-        this.answers.includeLicense = "include LICENSE"
+        this.answers.includeLicense = "include LICENSE";
       } else {
-        this.answers.includeLicense = ""
+        this.answers.includeLicense = "";
       }
     }.bind(this));
   },
 
   writing: function () {
     this._templateMap = {
-      app_name: this.answers.packageName,
+      appName: this.answers.packageName,
       packageName: this.answers.packageName,
-      app_title: _.startCase(this.answers.packageName),
+      appTitle: _.startCase(this.answers.packageName),
       reqMajor: this.answers.pythonVersion[0],
       reqMinor: this.answers.pythonVersion[1],
       reqPatch: this.answers.pythonVersion[2],
@@ -156,7 +156,7 @@ module.exports = yeoman.Base.extend({
         this.templatePath('licenses/' + this.answers.license),
         this.destinationPath('LICENSE'),
         this._templateMap
-      )
+      );
     }
   }
 });

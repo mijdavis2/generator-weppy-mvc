@@ -1,2 +1,2 @@
 [run]
-omit = <%= app_name %>/cli.py
+omit = <%= appName %>/cli.py

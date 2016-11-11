@@ -1,6 +1,6 @@
 from weppy import AppModule
 from weppy.tools import ServiceHandler
-from <%= app_name %> import app
+from <%= appName %> import app
 
 api = AppModule(app, 'api', __name__, url_prefix='api')
 api.common_handlers = [ServiceHandler('json')]
