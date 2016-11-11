@@ -3,7 +3,7 @@
 [![Weppy Version](https://img.shields.io/badge/weppy-<%= weppyVersion %>-blue.svg)](https://github.com/gi0baro/weppy)
 
 
-# <%= app_title %>
+# <%= appTitle %>
  
 A [Weppy](http://weppy.org) application.
 
@@ -33,8 +33,8 @@ python run.py
 To make your application available at ```http://localhost/```:
 
 ```
-docker build -t <%= app_name %> .
-docker run -it -p 80:8000 --rm --name <%= app_name %> <%= app_name %>
+docker build -t <%= appName %> .
+docker run -it -p 80:8000 --rm --name <%= appName %> <%= appName %>
 ```
 
 
@@ -50,12 +50,12 @@ To start the app in development mode, do:
 python run.py --dev
 ```
 
-See ```<%= app_name %>/cli.py``` for cli commands. 
+See ```<%= appName %>/cli.py``` for cli commands. 
 
 ## Test
 
 ```
-py.test -v -s --cov-report term-missing --cov=<%= app_name %> -r w tests
+py.test -v -s --cov-report term-missing --cov=<%= appName %> -r w tests
 ```
 
 
@@ -64,7 +64,7 @@ py.test -v -s --cov-report term-missing --cov=<%= app_name %> -r w tests
 [<%= license %>](LICENSE) <%= year %> <%= username %>
 
 
-[travis-img]: https://travis-ci.org/<%= username %>/<%= app_name %>.svg?branch=master
-[travis-url]: https://travis-ci.org/<%= username %>/<%= app_name %>
-[coverall-img]: https://coveralls.io/repos/github/<%= username %>/<%= app_name %>/badge.svg?branch=master
-[coverall-url]: https://coveralls.io/github/<%= username %>/<%= app_name %>?branch=master
+[travis-img]: https://travis-ci.org/<%= username %>/<%= appName %>.svg?branch=master
+[travis-url]: https://travis-ci.org/<%= username %>/<%= appName %>
+[coverall-img]: https://coveralls.io/repos/github/<%= username %>/<%= appName %>/badge.svg?branch=master
+[coverall-url]: https://coveralls.io/github/<%= username %>/<%= appName %>?branch=master

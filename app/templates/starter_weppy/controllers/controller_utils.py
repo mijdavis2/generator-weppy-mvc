@@ -1,6 +1,6 @@
 from weppy import response, abort, url, redirect
 
-from <%= app_name %> import app, auth
+from <%= appName %> import app, auth
 
 
 def not_auth():
@@ -14,19 +14,19 @@ def is_admin():
 
 @app.on_error(404)
 def error_404():
-    response.meta.title = "<%= app_title %>-404"
+    response.meta.title = "<%= appTitle %>-404"
     return app.render_template("errors/404.haml")
 
 
 @app.on_error(403)
 def error_403():
-    response.meta.title = "<%= app_title %>-403"
+    response.meta.title = "<%= appTitle %>-403"
     return app.render_template("errors/403.haml")
 
 
 @app.on_error(500)
 def error_500():
-    response.meta.title = "<%= app_title %> | Maintenance"
+    response.meta.title = "<%= appTitle %> | Maintenance"
     return app.render_template("errors/500.haml")
 
 

@@ -1,5 +1,5 @@
-from <%= app_name %> import db, auth
-from <%= app_name %>.models.user import User
+from <%= appName %> import db, auth
+from <%= appName %>.models.user import User
 
 
 def setup_admin():
