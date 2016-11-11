@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/mijdavis2/generator-weppy-mvc/tree/HEAD)
+
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.8...HEAD)
+
+**Merged pull requests:**
+
+- Update weppy0 8 2 [\#8](https://github.com/mijdavis2/generator-weppy-mvc/pull/8) ([mijdavis2](https://github.com/mijdavis2))
+
 ## [2.0.8](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.8) (2016-10-19)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.5...2.0.8)
 - :up: Update weppy version to 0.7.10
