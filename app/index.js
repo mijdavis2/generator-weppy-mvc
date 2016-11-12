@@ -62,8 +62,8 @@ module.exports = yeoman.Base.extend({
             "name": "3.4.3"
           },
           {
-            "value": ["3","5","1"],
-            "name": "3.5.1"
+            "value": ["3","5","2"],
+            "name": "3.5.2"
           }
         ]
       },
