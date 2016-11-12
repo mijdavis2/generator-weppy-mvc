@@ -1,17 +1,16 @@
 # Change Log
 
-## [Unreleased](https://github.com/mijdavis2/generator-weppy-mvc/tree/HEAD)
-
-[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.8...HEAD)
+## [2.1.1](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.1.1) (2016-11-12)
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.8...2.1.1)
 
 **Merged pull requests:**
 
+- :up: Update setup [\#11](https://github.com/mijdavis2/generator-weppy-mvc/pull/11) ([mijdavis2](https://github.com/mijdavis2))
+- :art: Cleanup js [\#9](https://github.com/mijdavis2/generator-weppy-mvc/pull/9) ([mijdavis2](https://github.com/mijdavis2))
 - Update weppy0 8 2 [\#8](https://github.com/mijdavis2/generator-weppy-mvc/pull/8) ([mijdavis2](https://github.com/mijdavis2))
 
 ## [2.0.8](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.8) (2016-10-19)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.5...2.0.8)
-- :up: Update weppy version to 0.7.10
-- *__Important update__ as Weppy 0.7.9 had a bug in AuthUser tool*
 
 ## [2.0.5](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.0.5) (2016-08-31)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.0.4...2.0.5)
