@@ -46,24 +46,32 @@ module.exports = yeoman.Base.extend({
         message : 'What minimum python version will you support?',
         choices : [
           {
-            "value": ["2","7","9"],
-            "name": "2.7.9"
+            value: ['3', '5', '2'],
+            name : '3.5.2'
           },
           {
-            "value": ["2","7","10"],
-            "name": "2.7.10"
+            value: ['3', '4', '5'],
+            name : '3.4.5'
           },
           {
-            "value": ["2","7","11"],
-            "name": "2.7.11"
+            value: ['3', '4', '3'],
+            name : '3.4.3'
           },
           {
-            "value": ["3","4","3"],
-            "name": "3.4.3"
+            value: ['2', '7', '11'],
+            name : '2.7.11'
           },
           {
-            "value": ["3","5","2"],
-            "name": "3.5.2"
+            value: ['2', '7', '10'],
+            name : '2.7.10'
+          },
+          {
+            value: ['2', '7', '9'],
+            name : '2.7.9'
+          },
+          {
+            value: ['2', '7', '8'],
+            name : '2.7.8'
           }
         ]
       },
