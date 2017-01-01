@@ -1,6 +1,6 @@
 {
   "name": "generator-weppy-mvc",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "description": "Build a full stack python web application in minutes.",
   "keywords": [
     "yeoman-generator",
