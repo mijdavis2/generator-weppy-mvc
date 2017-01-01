@@ -4,8 +4,6 @@ var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 var testAppName = 'name_x';
 var testUserName = 'username_x';
-var svc = require('../app/service.js');
-var chai = require('chai');
 
 describe('generator-weppy-mvc:app', function () {
   before(function (done) {
