@@ -2,7 +2,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var _ = require('lodash');
-
+var svc = require('./service');
 
 module.exports = yeoman.Base.extend({
   _defaultYear: function() {
@@ -18,6 +18,7 @@ module.exports = yeoman.Base.extend({
   },
 
   prompting: function () {
+    var versionChoices = svc.getWeppyVersions();
     return this.prompt([{
       type    : 'input',
       name    : 'useDirectory',
@@ -39,6 +40,12 @@ module.exports = yeoman.Base.extend({
         type    : 'input',
         name    : 'username',
         message : 'Your github username: '
+      },
+      {
+        type    : 'list',
+        name    : 'weppyVersion',
+        message : 'What Weppy version will you use?',
+        choices : versionChoices
       },
       {
         type    : 'list',
@@ -114,12 +121,12 @@ module.exports = yeoman.Base.extend({
       reqMajor: this.answers.pythonVersion[0],
       reqMinor: this.answers.pythonVersion[1],
       reqPatch: this.answers.pythonVersion[2],
+      weppyVersion: this.answers.weppyVersion,
       username: this.answers.username,
       packageDescription: this.answers.packageDescription,
       license: this.answers.license,
       year: this._defaultYear(),
       includeLicense: this.answers.includeLicense,
-      weppyVersion: '0.8.2'
     };
     if (this.answers.useDirectory != this.appname) {
       this.destinationRoot(this.answers.useDirectory);
