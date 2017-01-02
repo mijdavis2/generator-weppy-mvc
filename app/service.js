@@ -3,12 +3,13 @@ var request = require('request-json');
 var client = request.createClient('http://pypi.python.org/pypi/weppy/');
 
 function getReleases(data) {
-  var x;
-  var xlist = [];
-  for (x in data.releases) {
-    xlist.push(x);
+  var releases = [];
+  for (var x in data.releases) {
+    if (Object.prototype.hasOwnProperty.call(data.releases, x)) {
+      releases.push(x);
+    }
   }
-  return xlist;
+  return releases;
 }
 
 function cmpVersions (a, b) {
@@ -37,7 +38,7 @@ module.exports = {
         var sortedReleases = releases.sort(cmpVersions).reverse();
         // console.log(sortedReleases);
         sortedReleases.forEach(function(x) {
-          choices.push({name: x, value: x})
+          choices.push({name: x, value: x});
         });
       }
     );
