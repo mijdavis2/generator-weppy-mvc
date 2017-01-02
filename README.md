@@ -5,7 +5,7 @@
 
 # generator-weppy-mvc
  
-[![NPM][npm-info-image]][npm-info-url]
+[![NPM][npm-info-image]][npm-info-url] [![NPM](https://nodei.co/npm-dl/generator-weppy-mvc.png?months=9&height=3)](https://nodei.co/npm/generator-weppy-mvc/)
 
 Build a full-stack python web application in minutes.
 
