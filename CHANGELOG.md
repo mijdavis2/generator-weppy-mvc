@@ -1,5 +1,17 @@
 # Change Log
 
+## [v2.2.2](https://github.com/mijdavis2/generator-weppy-mvc/tree/v2.2.2) (2017-01-02)
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.1.4...v2.2.2)
+
+**Implemented enhancements:**
+
+- Add dynamic weppy version lookup [\#12](https://github.com/mijdavis2/generator-weppy-mvc/issues/12)
+
+**Merged pull requests:**
+
+- Cleanup [\#14](https://github.com/mijdavis2/generator-weppy-mvc/pull/14) ([mijdavis2](https://github.com/mijdavis2))
+- Add dynamic weppy version lookup | yarn [\#13](https://github.com/mijdavis2/generator-weppy-mvc/pull/13) ([mijdavis2](https://github.com/mijdavis2))
+
 ## [2.1.4](https://github.com/mijdavis2/generator-weppy-mvc/tree/2.1.4) (2016-11-12)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.1.3...2.1.4)
 
