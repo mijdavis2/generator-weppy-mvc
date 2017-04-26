@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.3.0](https://github.com/mijdavis2/generator-weppy-mvc/tree/v2.3.0) (2017-04-26)
+[Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/v2.2.2...v2.3.0)
+
+**Merged pull requests:**
+
+- :bug: Fix default root dir and inject python version in dockerfile and README [\#16](https://github.com/mijdavis2/generator-weppy-mvc/pull/16) ([mijdavis2](https://github.com/mijdavis2))
+
 ## [v2.2.2](https://github.com/mijdavis2/generator-weppy-mvc/tree/v2.2.2) (2017-01-02)
 [Full Changelog](https://github.com/mijdavis2/generator-weppy-mvc/compare/2.1.4...v2.2.2)
 
