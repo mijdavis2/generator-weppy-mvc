@@ -1,3 +1,3 @@
-FROM python:3.5-onbuild
+FROM python:<%= reqMajor %>.<%= reqMinor %>-onbuild
 EXPOSE 8000
-CMD ["python3", "./run.py"]
+CMD ["python<%= reqMajor %>", "./run.py"]
