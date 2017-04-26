@@ -22,14 +22,14 @@ module.exports = yeoman.Base.extend({
     return this.prompt([{
       type    : 'input',
       name    : 'useDirectory',
-      message : 'Target directory for new application: ',
-      default : this.appname // Default to current folder name
+      message : 'Target directory for new application (default is current directory): ',
+      default : this.appname.replace(/\s+/g, '-') // Default to current folder name
       },
       {
       type    : 'input',
       name    : 'packageName',
-      message : 'Your new weppy app name: ',
-      default : this.appname // Default to current folder name
+      message : 'Your new weppy app name (do NOT use dashes): ',
+      default : this.appname.replace(/\s+/g, '_') // Default to current folder name
       },
       {
         type    : 'input',
@@ -52,6 +52,10 @@ module.exports = yeoman.Base.extend({
         name    : 'pythonVersion',
         message : 'What minimum python version will you support?',
         choices : [
+          {
+            value: ['3', '6', '1'],
+            name : '3.6.1'
+          },
           {
             value: ['3', '5', '2'],
             name : '3.5.2'
@@ -126,9 +130,9 @@ module.exports = yeoman.Base.extend({
       packageDescription: this.answers.packageDescription,
       license: this.answers.license,
       year: this._defaultYear(),
-      includeLicense: this.answers.includeLicense,
+      includeLicense: this.answers.includeLicense
     };
-    if (this.answers.useDirectory != this.appname) {
+    if (this.answers.useDirectory != this.appname.replace(/\s+/g, '-')) {
       this.destinationRoot(this.answers.useDirectory);
     }
     this.fs.copyTpl(

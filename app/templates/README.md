@@ -14,10 +14,12 @@ A [Weppy](http://weppy.org) application.
 **Requirements**:
 - Python <%= reqMajor %>.<%= reqMinor %>.<%= reqPatch %>+
 
-For automated pip and virtual env setup and creation:
+For virtualenv setup and activation:
 
 ```
-. ./setup.sh
+virtualenv --python=$(which python<%=reqMajor %>.<%= reqMinor %>) env
+. ./env/bin/activate
+pip install -r requirements.txt
 python run.py
 ```
 
@@ -27,6 +29,8 @@ Otherwise:
 pip install -r requirements.txt
 python run.py
 ```
+
+***If pip fails on ubuntu, try `sudo apt-get install libyaml-dev libyaml-python<%= reqMajor %>.<%= reqMinor %>-dev`**
 
 ### Docker
 
