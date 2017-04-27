@@ -1,4 +1,5 @@
-from weppy import App, DAL
+from weppy import App
+from weppy.orm import Database
 from weppy.sessions import SessionCookieManager
 from weppy.tools import Auth
 
@@ -7,8 +8,6 @@ app = App(__name__, template_folder="./views")
 # Config
 app.config.url_default_namespace = "main"
 app.config.templates_auto_reload = True
-app.config.db.adapter = "sqlite"
-app.config.db.host = "127.0.0.1"
 
 # Language settings
 app.languages = ['en']
@@ -21,17 +20,15 @@ from <%= appName %>.models.user import User
 
 # init auth before passing db models due to dependencies
 # on auth tables in the other models
-db = DAL(app)
+db = Database(app)
 auth = Auth(
-        app, db, usermodel=User
+        app, db, user_model=User
 )
 
-# adding sessions and authorization handlers
-from <%= appName %>.utils import get_cryptogen_string
-app.route.common_handlers = [
-    SessionCookieManager(get_cryptogen_string(16)),
-    db.handler,
-    auth.handler
+# adding sessions and authorization pipelines
+from late_gen.utils import get_cryptogen_string
+app.pipeline = [
+    SessionCookieManager(get_cryptogen_string(16)), db.pipe, auth.pipe
 ]
 
 # Extensions
@@ -45,3 +42,5 @@ from <%= appName %>.controllers import *
 
 # Commands
 from <%= appName %> import cli
+
+auth_routes = auth.module(__name__)
