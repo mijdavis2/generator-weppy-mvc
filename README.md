@@ -4,6 +4,8 @@
 [![Codacy Badge][codacy-image]][codacy-url]
 
 # generator-weppy-mvc
+
+**NOTE:** Currently only Weppy 0.8 is supported. Support for 1.0+ is in the works.
  
 [![NPM][npm-info-image]][npm-info-url] [![NPM](https://nodei.co/npm-dl/generator-weppy-mvc.png?months=9&height=3)](https://nodei.co/npm/generator-weppy-mvc/)
 
